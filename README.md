@@ -21,10 +21,25 @@ PhoneConnect is an Android project skeleton for building device connection and c
 - Minimum SDK: 36
 - Target SDK: 36
 
-### Apps/Permissions
-- No third-party apps required for the skeleton
-- Enable Developer Options and USB Debugging on your device
-- Grant all requested permissions at runtime (if/when implemented)
+### Permissions & Features
+
+PhoneConnect requests a range of permissions to enable seamless integration with the companion Swift macOS app (features in progress):
+
+| Permission | Why Needed / Feature |
+|------------|---------------------|
+| Ignore Battery Optimizations | Keep connection alive in background for uninterrupted sync |
+| Notification Access | Mirror Android notifications instantly to your Mac |
+| Bluetooth (Scan/Advertise/Connect) | Auto-pair and connect to Mac for proximity-based features |
+| Overlay (Draw over apps) | Show floating controls and alerts on Android while connected |
+| Microphone | Bridge call audio and voice to your Mac |
+| Location | Enable Find My Phone and location-based triggers from Mac |
+| Gallery/Media | Share photos/videos between Android and Mac |
+| Phone/Contacts/Call Log | View, sync, and initiate calls from your Mac |
+| SMS | Read/send SMS from your Mac desktop |
+| Camera | Use phone camera as webcam or for document scanning on Mac |
+| Post Notifications | Show connection status and alerts on Android |
+
+All permissions are requested at runtime only as needed. You can use the app with only the features you enable.
 
 ## Getting Started
 - Build and run the app on your device or emulator
